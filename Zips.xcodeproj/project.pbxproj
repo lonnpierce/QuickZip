@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0036D291F036FD5009DFC31 /* ZipCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0036D281F036FD4009DFC31 /* ZipCodeTableViewController.swift */; };
+		F0036D3F1F047D17009DFC31 /* zip.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F0036D391F0467C4009DFC31 /* zip.sqlite */; };
+		F089B0A11F1BE884007E3D8F /* IPhone6plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F089B0A01F1BE884007E3D8F /* IPhone6plus.png */; };
 		F095D0C31EFDD0D500C9576B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0C21EFDD0D500C9576B /* AppDelegate.swift */; };
-		F095D0C51EFDD0D500C9576B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0C41EFDD0D500C9576B /* ViewController.swift */; };
-		F095D0C81EFDD0D500C9576B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F095D0C61EFDD0D500C9576B /* Main.storyboard */; };
 		F095D0CA1EFDD0D500C9576B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F095D0C91EFDD0D500C9576B /* Assets.xcassets */; };
 		F095D0CD1EFDD0D500C9576B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F095D0CB1EFDD0D500C9576B /* LaunchScreen.storyboard */; };
 		F095D0D81EFDD0D500C9576B /* ZipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0D71EFDD0D500C9576B /* ZipsTests.swift */; };
 		F095D0E31EFDD0D500C9576B /* ZipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0E21EFDD0D500C9576B /* ZipsUITests.swift */; };
+		F095D0F21EFDD15400C9576B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0F11EFDD15400C9576B /* State.swift */; };
+		F095D0F41EFDD1A500C9576B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0F31EFDD1A500C9576B /* City.swift */; };
+		F095D0FA1F000F9B00C9576B /* RootViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0F91F000F9B00C9576B /* RootViewControllerTableViewController.swift */; };
+		F095D0FC1F00202700C9576B /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095D0FB1F00202700C9576B /* CityViewController.swift */; };
+		F0CE92B31F0847D70013C17C /* StateSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE92B21F0847D60013C17C /* StateSearchResultsController.swift */; };
+		F0CE92B51F0BE1710013C17C /* ZipsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CE92B41F0BE1710013C17C /* ZipsStoryboard.storyboard */; };
+		F0EC56F21F01C2C20056F1AB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EC56EE1F01C00F0056F1AB /* libsqlite3.0.tbd */; };
+		F0EC56F31F01C2C20056F1AB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EC56EF1F01C00F0056F1AB /* libsqlite3.tbd */; };
+		F0EC56FA1F01CB270056F1AB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC56F91F01CB270056F1AB /* Data.swift */; };
+		F0EC56FC1F01CE960056F1AB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EC56FB1F01CE960056F1AB /* CoreData.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		F0036D3D1F047341009DFC31 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = "com.apple.build-tasks.copy-strings-file";
+			filePatterns = zip.sqlite;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		F095D0D41EFDD0D500C9576B /* PBXContainerItemProxy */ = {
@@ -34,10 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0036D241F01D88D009DFC31 /* Zips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zips-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0036D281F036FD4009DFC31 /* ZipCodeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTableViewController.swift; sourceTree = "<group>"; };
+		F0036D391F0467C4009DFC31 /* zip.sqlite */ = {isa = PBXFileReference; explicitFileType = compiled; name = zip.sqlite; path = Zips/zip.sqlite; sourceTree = SOURCE_ROOT; };
+		F089B0A01F1BE884007E3D8F /* IPhone6plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IPhone6plus.png; sourceTree = "<group>"; };
 		F095D0BF1EFDD0D500C9576B /* Zips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F095D0C21EFDD0D500C9576B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F095D0C41EFDD0D500C9576B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F095D0C71EFDD0D500C9576B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F095D0C91EFDD0D500C9576B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F095D0CC1EFDD0D500C9576B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F095D0CE1EFDD0D500C9576B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +72,16 @@
 		F095D0DE1EFDD0D500C9576B /* ZipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F095D0E21EFDD0D500C9576B /* ZipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipsUITests.swift; sourceTree = "<group>"; };
 		F095D0E41EFDD0D500C9576B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F095D0F11EFDD15400C9576B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		F095D0F31EFDD1A500C9576B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		F095D0F91F000F9B00C9576B /* RootViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		F095D0FB1F00202700C9576B /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		F0CE92B21F0847D60013C17C /* StateSearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateSearchResultsController.swift; sourceTree = "<group>"; };
+		F0CE92B41F0BE1710013C17C /* ZipsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZipsStoryboard.storyboard; sourceTree = "<group>"; };
+		F0EC56EE1F01C00F0056F1AB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F0EC56EF1F01C00F0056F1AB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F0EC56F91F01CB270056F1AB /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F0EC56FB1F01CE960056F1AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EC56FC1F01CE960056F1AB /* CoreData.framework in Frameworks */,
+				F0EC56F21F01C2C20056F1AB /* libsqlite3.0.tbd in Frameworks */,
+				F0EC56F31F01C2C20056F1AB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +115,13 @@
 		F095D0B61EFDD0D400C9576B = {
 			isa = PBXGroup;
 			children = (
+				F0036D391F0467C4009DFC31 /* zip.sqlite */,
+				F0EC56F41F01C9310056F1AB /* ZipData */,
 				F095D0C11EFDD0D500C9576B /* Zips */,
 				F095D0D61EFDD0D500C9576B /* ZipsTests */,
 				F095D0E11EFDD0D500C9576B /* ZipsUITests */,
 				F095D0C01EFDD0D500C9576B /* Products */,
+				F0EC56ED1F01C00E0056F1AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +138,17 @@
 		F095D0C11EFDD0D500C9576B /* Zips */ = {
 			isa = PBXGroup;
 			children = (
+				F089B0A01F1BE884007E3D8F /* IPhone6plus.png */,
+				F095D0F01EFDD10F00C9576B /* Models */,
 				F095D0C21EFDD0D500C9576B /* AppDelegate.swift */,
-				F095D0C41EFDD0D500C9576B /* ViewController.swift */,
-				F095D0C61EFDD0D500C9576B /* Main.storyboard */,
 				F095D0C91EFDD0D500C9576B /* Assets.xcassets */,
 				F095D0CB1EFDD0D500C9576B /* LaunchScreen.storyboard */,
 				F095D0CE1EFDD0D500C9576B /* Info.plist */,
+				F095D0F91F000F9B00C9576B /* RootViewControllerTableViewController.swift */,
+				F095D0FB1F00202700C9576B /* CityViewController.swift */,
+				F0036D281F036FD4009DFC31 /* ZipCodeTableViewController.swift */,
+				F0CE92B21F0847D60013C17C /* StateSearchResultsController.swift */,
+				F0CE92B41F0BE1710013C17C /* ZipsStoryboard.storyboard */,
 			);
 			path = Zips;
 			sourceTree = "<group>";
@@ -125,6 +171,34 @@
 			path = ZipsUITests;
 			sourceTree = "<group>";
 		};
+		F095D0F01EFDD10F00C9576B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0036D241F01D88D009DFC31 /* Zips-Bridging-Header.h */,
+				F095D0F11EFDD15400C9576B /* State.swift */,
+				F095D0F31EFDD1A500C9576B /* City.swift */,
+				F0EC56F91F01CB270056F1AB /* Data.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F0EC56ED1F01C00E0056F1AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0EC56FB1F01CE960056F1AB /* CoreData.framework */,
+				F0EC56EE1F01C00F0056F1AB /* libsqlite3.0.tbd */,
+				F0EC56EF1F01C00F0056F1AB /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0EC56F41F01C9310056F1AB /* ZipData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ZipData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +211,7 @@
 				F095D0BD1EFDD0D400C9576B /* Resources */,
 			);
 			buildRules = (
+				F0036D3D1F047341009DFC31 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -187,12 +262,17 @@
 		F095D0B71EFDD0D400C9576B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					zip.sqlite,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Lonnie Pierce";
 				TargetAttributes = {
 					F095D0BE1EFDD0D400C9576B = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = A3BJBW5BNW;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F095D0D21EFDD0D500C9576B = {
@@ -232,9 +312,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F089B0A11F1BE884007E3D8F /* IPhone6plus.png in Resources */,
+				F0036D3F1F047D17009DFC31 /* zip.sqlite in Resources */,
 				F095D0CD1EFDD0D500C9576B /* LaunchScreen.storyboard in Resources */,
 				F095D0CA1EFDD0D500C9576B /* Assets.xcassets in Resources */,
-				F095D0C81EFDD0D500C9576B /* Main.storyboard in Resources */,
+				F0CE92B51F0BE1710013C17C /* ZipsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F095D0C51EFDD0D500C9576B /* ViewController.swift in Sources */,
+				F0EC56FA1F01CB270056F1AB /* Data.swift in Sources */,
 				F095D0C31EFDD0D500C9576B /* AppDelegate.swift in Sources */,
+				F0CE92B31F0847D70013C17C /* StateSearchResultsController.swift in Sources */,
+				F095D0F41EFDD1A500C9576B /* City.swift in Sources */,
+				F095D0F21EFDD15400C9576B /* State.swift in Sources */,
+				F0036D291F036FD5009DFC31 /* ZipCodeTableViewController.swift in Sources */,
+				F095D0FA1F000F9B00C9576B /* RootViewControllerTableViewController.swift in Sources */,
+				F095D0FC1F00202700C9576B /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +384,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F095D0C61EFDD0D500C9576B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F095D0C71EFDD0D500C9576B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F095D0CB1EFDD0D500C9576B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -315,6 +395,101 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F0036D2E1F0399F7009DFC31 /* Debug copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug copy";
+		};
+		F0036D2F1F0399F7009DFC31 /* Debug copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = A3BJBW5BNW;
+				INFOPLIST_FILE = Zips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lpeazy.Zips.Zips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zips/Zips-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug copy";
+		};
+		F0036D301F0399F7009DFC31 /* Debug copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lpeazy.Zips.ZipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zips.app/Zips";
+			};
+			name = "Debug copy";
+		};
+		F0036D311F0399F7009DFC31 /* Debug copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lpeazy.Zips.ZipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Zips;
+			};
+			name = "Debug copy";
+		};
 		F095D0E51EFDD0D500C9576B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,10 +587,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = A3BJBW5BNW;
 				INFOPLIST_FILE = Zips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lpeazy.Zips.Zips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zips/Zips-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +605,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = A3BJBW5BNW;
 				INFOPLIST_FILE = Zips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lpeazy.Zips.Zips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zips/Zips-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -493,34 +679,41 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F095D0E51EFDD0D500C9576B /* Debug */,
+				F0036D2E1F0399F7009DFC31 /* Debug copy */,
 				F095D0E61EFDD0D500C9576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F095D0E71EFDD0D500C9576B /* Build configuration list for PBXNativeTarget "Zips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F095D0E81EFDD0D500C9576B /* Debug */,
+				F0036D2F1F0399F7009DFC31 /* Debug copy */,
 				F095D0E91EFDD0D500C9576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		F095D0EA1EFDD0D500C9576B /* Build configuration list for PBXNativeTarget "ZipsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F095D0EB1EFDD0D500C9576B /* Debug */,
+				F0036D301F0399F7009DFC31 /* Debug copy */,
 				F095D0EC1EFDD0D500C9576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		F095D0ED1EFDD0D500C9576B /* Build configuration list for PBXNativeTarget "ZipsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F095D0EE1EFDD0D500C9576B /* Debug */,
+				F0036D311F0399F7009DFC31 /* Debug copy */,
 				F095D0EF1EFDD0D500C9576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
